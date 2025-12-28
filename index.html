@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Sistem Informasi</title>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.hero {
+  padding: 120px 0;
+}
+.hero img {
+  width: 170px;
+  border-radius: 20px;
+  border: 4px dashed #6610f2;
+}
+.section-title {
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.portfolio-card img{
+  width: 100%;
+  border-radius: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Profil Mahasiswa Keren</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuBar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuBar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Kemampuan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#materi">Materi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero text-center mt-5">
+  <div class="container">
+    <img src="orangganteng.jpeg" alt="foto">
+    <h1 class="mt-4 fw-bold">Nama Kamu Disini</h1>
+    <p class="lead">Calon Penghuni Surga</p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-2">
+      <a href="#portfolio" class="btn btn-outline-light bg-dark">Lihat Project</a>
+      <a href="#materi" class="btn btn-outline-dark">Materi Kuliah</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center section-title">Tentang Saya</h2>
+    <p class="text-center">
+      Website ini dibuat untuk tugas UAS.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center section-title">Kemampuan</h2>
+
+    <div class="row text-center g-3">
+      <div class="col-md-3"><span class="btn btn-outline-dark w-100">HTML Dasar</span></div>
+      <div class="col-md-3"><span class="btn btn-outline-dark w-100">CSS Dasar</span></div>
+      <div class="col-md-3"><span class="btn btn-outline-dark w-100">JavaScript Dasar</span></div>
+      <div class="col-md-3"><span class="btn btn-outline-dark w-100">Bootstrap</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERI -->
+<section id="materi" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center section-title">Materi Semester 1</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Logika Algoritma</h5>
+            <p>Dasar dasar mikir sebelum coding.</p>
+            <button class="btn btn-dark w-100">Buka Materi</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Sistem Basis Data</h5>
+            <p>Relasi tabel, kunci utama, dan kunci hati… eh.</p>
+            <button class="btn btn-dark w-100">Buka Materi</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Pemrograman Web</h5>
+            <p>HTML CSS JS sampai kamu pusing tapi bangga.</p>
+            <button class="btn btn-dark w-100">Buka Materi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-5">
+  <div class="container">
+    <h2 class="text-center section-title">Project</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <img src="layout.png">
+          <h5 class="mt-2">Web Profile</h5>
+          <p>Project awal belajar HTML.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <img src="kerangka.png">
+          <h5 class="mt-2">Form Input</h5>
+          <p>Latihan form sederhana.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <img src="project pembutan pembelian tiket.png">
+          <h5 class="mt-2">Mini Website</h5>
+          <p>Gabungan HTML CSS Bootstrap.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center section-title">Kontak Saya</h2>
+
+    <form class="mx-auto" style="max-width:650px;">
+      <input class="form-control mb-3" placeholder="Nama lengkap">
+      <input class="form-control mb-3" placeholder="Email aktif">
+      <textarea class="form-control mb-3" rows="4" placeholder="Tulis pesan disini"></textarea>
+      <button class="btn btn-dark w-100">Kirim Pesan</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">Portfolio Sistem Informasi © 2025</p>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
